@@ -1,0 +1,62 @@
+---------------------
+LOCALIDAD
+---------------------
+Variables
+---------------------
++boolean IsAvailable (Determina si esta localidad puede ser vendida)
++double price (El precio de la localidad deseada)
++String type (Puede ser la localidad 1, 5 o 10)
+
+---------------------
+Metodos
+---------------------
+Ninguno
+
+
+
+
+
+
+---------------------
+TICKET
+---------------------
+Variables
+---------------------
+-String Name ((Es inutil pero lo piden))
+-int DPI ((Es inutil pero lo piden))
+
+-int amount (El número de boletos que se quieren comprar)
+-int budget
+
+---------------------
+Metodos
+---------------------
+-int randomnum(num1,num2) (Genera dos numeros aleatorios entre 1 y 33000)
+-int randomnum(num) (Genera el número de ticket, un valor entre 1 y 15000) [Es el mismo nombre de clase por overloading]
++boolean isvalid() (Utiliza los metodos de randomnum y los compara para determinar si este es un ticket valido)
+
+
+
+
+
+
+---------------------
+MAIN
+---------------------
+Variables
+---------------------
+-int sold (la cantidad de tickets que se han vendido)
+-int localidad actual (La localidad que se esta intentando vender actualmente)
+-int presupuesto (El presupuesto del comprador de tickets actual)
++double profitsA (las ganancias actuales de la localidad 1)
++double profitsB (las ganancias actuales de la localidad 5)
++double profitsC (las ganancias actuales de la localidad 10)
+
+(Antes de seguir con los métodos se deben crear 20 instancias de cada tipo de localidad)
+
+---------------------
+Métodos
+---------------------
+-void newclient() (se usa para cambiar el presupuesto)
+-void sell() (se utiliza al tratar de vender un ticket)
+-boolean spacecheck() (se utiliza para verificar que la cantidad de tickets no exceda el espacio)
